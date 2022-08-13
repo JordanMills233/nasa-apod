@@ -1,88 +1,94 @@
 .App {
-  text-align: center;
+    text-align: center;
+}
+.pls {
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    font-size: 24px;
+    font-weight: 550;
 }
 
 .App-header {
-  color: #282c34;
-  background-image: url("https://stsci-opo.org/STScI-01GA6KNV1S3TP2JBPCDT8G826T.png");
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+    color: #282c34;
+    background-image: url("https://stsci-opo.org/STScI-01GA6KNV1S3TP2JBPCDT8G826T.png");
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
 }
 
 .Submit-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: white;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 10px;
-  gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    gap: 5px;
 }
 
 input {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 input[type="text"] {
-  border-radius: 5px;
+    border-radius: 5px;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 /* NASA photo data page */
 .main-photo-wrapper {
-  margin-top: 100px;
-  margin-left: 10px;
-  margin-right: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
 }
 
 .main-photo-wrapper img {
-  border-radius: 15px;
-  width: 700px;
-  height: 700px;
+    border-radius: 15px;
+    width: 700px;
+    height: 700px;
 }
 
 iframe {
-  border-radius: 15px;
-  width: 700px;
-  height: 700px;
+    border-radius: 15px;
+    width: 700px;
+    height: 700px;
 }
 
 .photo-data-wrapper {
-  border: 1px solid #282c34;
-  border-radius: 15px;
-  padding: 50px;
-  width: 700px;
+    border: 1px solid #282c34;
+    border-radius: 15px;
+    padding: 50px;
+    width: 700px;
 }
 
 /* Add a little responsiveness */
 
 @media only screen and (orientation: portrait) {
-  .nav-bar-button {
-    display: flex;
-    justify-content: center;
-  }
+    .nav-bar-button {
+        display: flex;
+        justify-content: center;
+    }
 
-  .main-photo-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
+    .main-photo-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
 
-  .photo-data-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
+    .photo-data-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
 }
