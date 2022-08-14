@@ -5,6 +5,10 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 //mport { borderRadius } from "polished";
 
+function randomNumber(min, max) {
+    return Math.random() * (max - min) + min;
+}
+
 export const linkStyle = {
     fontSize: "16px",
     fontWeight: "500",
@@ -13,6 +17,7 @@ export const linkStyle = {
     background: "black",
     textDecoration: "none",
     color: "white",
+    margin: "10px",
 };
 
 export default function Home() {
@@ -22,6 +27,13 @@ export default function Home() {
         console.log("handleSubmit ran");
         event.preventDefault();
     };
+
+    let randomYear = Math.floor(randomNumber(1999, 2022)).toString();
+    let randomMonth = Math.floor(randomNumber(1, 12)).toString();
+    let randomDay = Math.floor(randomNumber(1, 29)).toString();
+
+    let randomDate = randomYear + "-" + randomMonth + "-" + randomDay;
+    console.log(randomDate);
 
     return (
         <div className="App">
@@ -46,6 +58,13 @@ export default function Home() {
                             style={linkStyle}
                         >
                             See into the stars
+                        </Link>
+                        <Link
+                            to={`/nasa-photo`}
+                            state={{ date: randomDate }}
+                            style={linkStyle}
+                        >
+                            Random APOD
                         </Link>
                     </div>
                 </div>
